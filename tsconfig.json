@@ -18,12 +18,14 @@
 			"../node_modules/@types"
 		]
 	},
+	"files": [
+		"src/index.ts"
+	],
 	"exclude": [
 		"node_modules",
 		"example"
 	],
 	"angularCompilerOptions": {
-		"genDir": "./temp/factories",
-		"skipMetadataEmit": true
+		"genDir": "./temp/factories"
 	}
 }
