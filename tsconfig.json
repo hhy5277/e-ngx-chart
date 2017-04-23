@@ -1,0 +1,29 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es5",
+		"moduleResolution": "node",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"noEmitHelpers": false,
+		"sourceMap": true,
+		"declaration": true,
+		"rootDir": "src",
+		"outDir": "dist",
+		"lib": [
+			"es6",
+			"dom"
+		],
+		"typeRoots": [
+			"../node_modules/@types"
+		]
+	},
+	"exclude": [
+		"node_modules",
+		"example"
+	],
+	"angularCompilerOptions": {
+		"genDir": "./temp/factories",
+		"skipMetadataEmit": true
+	}
+}
