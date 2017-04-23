@@ -1,6 +1,6 @@
 {
 	"name": "essence-ng2-chart",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"description": "essence-ng2-chart is an Angular directive that can draw a chart.",
 	"keywords": [
 		"angular2",
@@ -24,6 +24,7 @@
 		"url": "https://github.com/laixiangran/essence-ng2-chart/issues"
 	},
 	"scripts": {
+		"prepublish": "ngc",
 		"start": "npm run jit",
 		"jit": "ng serve -o",
 		"aot": "ng serve -o --aot",
@@ -31,6 +32,8 @@
 		"build-test": "ng build --prod --env=test --aot",
 		"build-prod": "ng build --prod --env=prod --aot"
 	},
+	"module": "dist/index.js",
+	"typings": "dist/index.d.ts",
 	"dependencies": {
 		"@types/highcharts": "^4.2.54",
 		"highcharts": "^5.0.10"
