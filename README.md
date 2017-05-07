@@ -2,6 +2,8 @@
 
 essence-ng2-chart is an Angular directive that can draw a chart.
 
+依赖的第三方插件：[highcharts](https://www.hcharts.cn/demo/highcharts)
+
 ## Usage
 
 1. Install
