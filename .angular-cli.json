@@ -11,10 +11,7 @@
 			"main": "main.ts",
 			"polyfills": "polyfills.ts",
 			"tsconfig": "tsconfig.json",
-			"prefix": "",
-			"styles": [
-				"./index.css"
-			],
+			"styles": [],
 			"scripts": [],
 			"environmentSource": "environments/environment.ts",
 			"environments": {
@@ -25,7 +22,6 @@
 		}
 	],
 	"defaults": {
-		"styleExt": "scss",
-		"component": {}
+		"styleExt": "scss"
 	}
 }

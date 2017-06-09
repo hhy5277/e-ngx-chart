@@ -1,6 +1,6 @@
-﻿{
+{
 	"name": "essence-ng2-chart",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "essence-ng2-chart is an Angular directive that can draw a chart.",
 	"keywords": [
 		"angular2",
@@ -48,11 +48,13 @@
 		"@angular/platform-browser-dynamic": "^4.0.0",
 		"@angular/router": "^4.0.0",
 		"@angular/compiler-cli": "^4.0.0",
-		"@angular/cli": "1.0.0",
+		"@angular/cli": "^1.0.6",
 		"@types/node": "^6.0.60",
 		"core-js": "^2.4.1",
 		"rxjs": "^5.1.0",
 		"zone.js": "^0.8.4",
+		"tslint": "^5.0.0",
+		"tslint-eslint-rules": "^4.0.0",
 		"typescript": "~2.2.0"
 	}
 }

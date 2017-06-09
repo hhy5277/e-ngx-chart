@@ -32,7 +32,7 @@ essence-ng2-chart is an Angular directive that can draw a chart.
 4. component
 
 	```typescript
-	import {EssenceChart} from "essence-ng2-chart";
+	import { EssenceChart } from "essence-ng2-chart";
 	
 	chart = new EssenceChart({
     		chart: {
@@ -84,14 +84,16 @@ essence-ng2-chart is an Angular directive that can draw a chart.
 
 ### Instance Method
 
-- `destroy` - 销毁图表控件
+#### EssenceNg2ChartDirective
+
+- `chartDestroy()` - 销毁图表控件
+
+#### EssenceChart
+
+- `setData(data: any[], index: number = 0)` - 设置数据列的值。其中index为数据列序号。
+
+- `setXCategories(categories: any[], index: number = 0)` - 设置x轴分类。其中index为x轴序号。
 
 # License
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](/LICENSE)
-
-# Change Log
-
-## 1.0.6 (2017-05-17)
-
-发布内部私有初始版本
