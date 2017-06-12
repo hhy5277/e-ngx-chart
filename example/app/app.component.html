@@ -1,10 +1,6 @@
 <div class="app_main">
 	<h1>HighCharts Directive for Angular2</h1>
-	<p>
-		<button (click)="setData()">设置数据</button>
-		<button (click)="setXCategories()">设置x轴分类</button>
-	</p>
-	<div class="chart-main" essence-ng2-chart [chart]="chart"></div>
-	<div class="chart-main" essence-ng2-chart [chart]="chart1"></div>
-	<div class="chart-main" essence-ng2-chart [chart]="chart2"></div>
+	<div class="chart-main" essence-ng2-chart [chart]="chart" (ready)="chartReady($event)"></div>
+	<div class="chart-main" essence-ng2-chart [chart]="chart1" (ready)="chart1Ready($event)"></div>
+	<div class="chart-main" essence-ng2-chart [chart]="chart2" (ready)="chart2Ready($event)"></div>
 </div>
