@@ -1,3 +1,7 @@
+## 1.0.8 (2017-07-03)
+
+- 新增 EssenceChart新增setSeries方法
+
 ## 1.0.7 (2017-06-09)
 
 - 新增 EssenceChart新增setData、setXCategories方法

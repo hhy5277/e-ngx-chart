@@ -18,7 +18,7 @@ export class EssenceChart {
      * @returns {SeriesObject[]}
      */
     getSeries() {
-        return this.chart.series;
+        return this.options["series"];
     }
 
     /**
@@ -42,7 +42,6 @@ export class EssenceChart {
     /**
      * 设置数据列
      * @param series
-     * @deprecated 使用 `setData` 代替。
      */
     setSeries(series: any) {
         this.options["series"] = series;

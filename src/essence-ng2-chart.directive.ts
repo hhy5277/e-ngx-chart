@@ -3,15 +3,16 @@
  * homepage：http://www.laixiangran.cn.
  */
 
-import { Directive, ElementRef, Input, OnInit, OnDestroy, Output, EventEmitter } from "@angular/core";
+import { Directive, ElementRef, Input, OnInit, OnDestroy, Output, EventEmitter, DoCheck } from "@angular/core";
 import { setOptions, chart } from "highcharts";
 import { EssenceChart } from "./EssenceChart";
 
 @Directive({
     selector: "[essence-ng2-chart]"
 })
-export class EssenceNg2ChartDirective implements OnInit, OnDestroy {
+export class EssenceNg2ChartDirective implements OnInit, OnDestroy, DoCheck {
     private el: HTMLElement;
+    private oldSeries: any;
 
     constructor(el: ElementRef) {
         this.el = el.nativeElement;
@@ -28,6 +29,14 @@ export class EssenceNg2ChartDirective implements OnInit, OnDestroy {
 
     ngOnDestroy() {
         this.chartDestroy();
+    }
+
+    ngDoCheck () {
+        if (this.essenceChart.getSeries() !== this.oldSeries) {
+            this.oldSeries = this.essenceChart.getSeries();
+            this.chartDestroy();
+            this.chartInit();
+        }
     }
 
     private chartInit() {
