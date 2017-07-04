@@ -96,6 +96,8 @@ essence-ng2-chart is an Angular directive that can draw a chart.
 
 - `setSeries(series: any)` - 设置数据列。
 
+- `setXaxisCategories(categories: any)` - 设置x轴分类。
+
 # License
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](/LICENSE)

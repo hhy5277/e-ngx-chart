@@ -50,7 +50,6 @@ export class EssenceChart {
     /**
      * 设置x轴分类
      * @param categories
-     * @deprecated 使用 `setXCategories` 代替。
      */
     setXaxisCategories(categories: any) {
         !this.options["xAxis"] && (this.options["xAxis"] = {});
