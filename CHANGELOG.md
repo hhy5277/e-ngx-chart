@@ -1,3 +1,11 @@
+## 1.1.0 (2017-08-01)
+
+- 修改 修改了options的类型为any。
+
+- 新增 使用set对chart做了拦截,实际上是监听了options对象。
+
+- 新增 示例文件添加了，更新标题和添加单位的两种操作方法。
+
 ## 1.0.9 (2017-07-04)
 
 - 新增 EssenceChart新增setXaxisCategories方法
