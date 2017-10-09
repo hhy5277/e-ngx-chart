@@ -11,7 +11,9 @@
 			"main": "main.ts",
 			"polyfills": "polyfills.ts",
 			"tsconfig": "tsconfig.json",
-			"styles": [],
+			"styles": [
+				"./styles.scss"
+			],
 			"scripts": [],
 			"environmentSource": "environments/environment.ts",
 			"environments": {
