@@ -1,6 +1,6 @@
 {
 	"name": "essence-ng2-chart",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"description": "essence-ng2-chart is an Angular directive that can draw a chart.",
 	"keywords": [
 		"angular2",

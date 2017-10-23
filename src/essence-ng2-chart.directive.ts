@@ -8,7 +8,8 @@ import {setOptions, chart} from 'highcharts';
 import {EssenceChart} from './EssenceChart';
 
 @Directive({
-	selector: '[essence-ng2-chart]'
+	selector: '[essence-ng2-chart]',
+	exportAs: 'eNgChart'
 })
 export class EssenceNg2ChartDirective implements OnInit, OnDestroy, DoCheck {
 

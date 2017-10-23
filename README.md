@@ -74,6 +74,10 @@ essence-ng2-chart is an Angular directive that can draw a chart.
 
 ## API
 
+### exportAs
+
+- `eNgChart` - 导出的指令变量，可在模板获取指令类并调用（`#eNgChart="eNgChart"`）。
+
 ### Inputs
 
 - `chart`（`EssenceChart`） - new EssenceChart(options)时，options与[Highcharts的配置属性](https://api.hcharts.cn/highcharts)一致
