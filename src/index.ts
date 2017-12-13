@@ -3,5 +3,5 @@
  * homepage：http://www.laixiangran.cn
  */
 
-export {EssenceNg2ChartModule} from './essence-ng2-chart.module';
-export {EssenceChart} from './EssenceChart';
+export { ENgxChartModule } from './e-ngx-chart.module';
+export { EssenceChart } from './EssenceChart';

@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {EssenceChart} from '../../src/EssenceChart';
+import { Component, OnInit } from '@angular/core';
+import { ENgxChartOptions } from '../../src/ENgxChartOptions';
 
 @Component({
 	selector: 'app-root',
@@ -7,7 +7,7 @@ import {EssenceChart} from '../../src/EssenceChart';
 	styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-	chart = new EssenceChart({
+	chart = new ENgxChartOptions({
 		chart: {
 			type: 'line'
 		},
@@ -56,7 +56,7 @@ export class AppComponent {
 		}
 	});
 
-	chart1 = new EssenceChart({
+	chart1 = new ENgxChartOptions({
 		chart: {
 			type: 'column'
 		},
@@ -95,7 +95,7 @@ export class AppComponent {
 		},
 	});
 
-	chart2 = new EssenceChart({
+	chart2 = new ENgxChartOptions({
 		chart: {
 			type: 'pie'
 		},

@@ -3,9 +3,9 @@
  * homepage：http://www.laixiangran.cn
  */
 
-import {AxisObject, ChartObject} from 'highcharts';
+import { AxisObject, ChartObject } from 'highcharts';
 
-export class EssenceChart {
+export class ENgxChartOptions {
 	public chart: ChartObject; // highChart的图表对象
 	public options: any; // 图表配置属性
 

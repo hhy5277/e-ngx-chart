@@ -1,17 +1,17 @@
 {
-	"name": "essence-ng2-chart",
-	"version": "1.1.1",
-	"description": "essence-ng2-chart is an Angular directive that can draw a chart.",
+	"name": "e-ngx-chart",
+	"version": "1.2.0",
+	"description": "基于Angular的图表组件，依赖第三方插件：highcharts",
 	"keywords": [
 		"angular2",
 		"highcharts",
-		"essence-ng2-chart",
+		"e-ngx-chart",
 		"laixiangran"
 	],
-	"homepage": "https://github.com/laixiangran/essence-ng2-chart#readme",
+	"homepage": "https://github.com/laixiangran/e-ngx-chart#readme",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/laixiangran/essence-ng2-chart.git"
+		"url": "https://github.com/laixiangran/e-ngx-chart.git"
 	},
 	"author": {
 		"name": "赖祥燃 胡星兆",
@@ -21,7 +21,7 @@
 	},
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/laixiangran/essence-ng2-chart/issues"
+		"url": "https://github.com/laixiangran/e-ngx-chart/issues"
 	},
 	"scripts": {
 		"release": "ngc && npm publish",

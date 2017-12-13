@@ -1,6 +1,6 @@
-# essence-ng2-chart
+# e-ngx-chart
 
-essence-ng2-chart is an Angular directive that can draw a chart.
+基于Angular的图表组件。
 
 依赖的第三方插件：[highcharts](https://www.hcharts.cn/demo/highcharts)
 
@@ -9,16 +9,16 @@ essence-ng2-chart is an Angular directive that can draw a chart.
 1. Install
 
 	```shell
-	npm install --save essence-ng2-chart
+	npm install --save e-ngx-chart
 	```
 
-2. Add the EssenceNg2PrintModule
+2. Add the ENgxChartModule
 
 	```typescript
-	import {EssenceNg2ChartModule} from "essence-ng2-chart";
+	import { ENgxChartModule } from "e-ngx-chart";
 	@NgModule({
 	    imports: [
-	        EssenceNg2ChartModule
+	        ENgxChartModule
 	    ]
 	})
 	```
@@ -26,15 +26,15 @@ essence-ng2-chart is an Angular directive that can draw a chart.
 3. template
 
 	```html
-	<div class="chart-main" essence-ng2-chart [chart]="chart"></div>
+	<div class="chart-main" eNgxChart [chartOptions]="chartOptions"></div>
 	```
 
 4. component
 
 	```typescript
-	import { EssenceChart } from "essence-ng2-chart";
+	import { ENgxChartOptions } from "e-ngx-chart";
 	
-	chart = new EssenceChart({
+	chartOptions = new ENgxChartOptions({
     		chart: {
     			type: "column"
     		},
@@ -76,23 +76,23 @@ essence-ng2-chart is an Angular directive that can draw a chart.
 
 ### exportAs
 
-- `eNgChart` - 导出的指令变量，可在模板获取指令类并调用（`#eNgChart="eNgChart"`）。
+- `eNgxChart` - 导出的指令变量，可在模板获取指令类并调用（`#eNgxChart="eNgxChart"`）。
 
 ### Inputs
 
-- `chart`（`EssenceChart`） - new EssenceChart(options)时，options与[Highcharts的配置属性](https://api.hcharts.cn/highcharts)一致
+- `chartOptions`（`ENgxChartOptions`） - new ENgxChartOptions(options)时，options与[Highcharts的配置属性](https://api.hcharts.cn/highcharts)一致
 
 ### Outputs
 
-- `ready` - 初始化完成的事件，$event为当前EssenceNg2ChartDirective实例
+- `ready` - 初始化完成的事件，$event为当前ENgxChartDirective实例
 
 ### Instance Method
 
-#### EssenceNg2ChartDirective
+#### ENgxChartDirective
 
 - `chartDestroy()` - 销毁图表控件
 
-#### EssenceChart
+#### ENgxChartOptions
 
 - `setData(data: any[], index: number = 0)` - 设置数据列的值。其中index为数据列序号。
 
