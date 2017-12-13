@@ -4,4 +4,4 @@
  */
 
 export { ENgxChartModule } from './e-ngx-chart.module';
-export { EssenceChart } from './EssenceChart';
+export { ENgxChartOptions } from './ENgxChartOptions';
