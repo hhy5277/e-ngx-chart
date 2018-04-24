@@ -1,6 +1,6 @@
 {
 	"name": "e-ngx-chart",
-	"version": "1.2.0",
+	"version": "5.0.0",
 	"description": "基于Angular的图表组件，依赖第三方插件：highcharts",
 	"keywords": [
 		"angular2",
@@ -14,7 +14,7 @@
 		"url": "https://github.com/laixiangran/e-ngx-chart.git"
 	},
 	"author": {
-		"name": "赖祥燃 胡星兆",
+		"name": "赖祥燃",
 		"email": "laixiangran@163.com",
 		"bolg": "http://www.cnblogs.com/laixiangran",
 		"homepage": "http://www.laixiangran.cn"
@@ -36,29 +36,30 @@
 		"highcharts": "^5.0.10"
 	},
 	"devDependencies": {
-		"@angular/animations": "^4.0.0",
-		"@angular/core": "^4.0.0",
-		"@angular/common": "^4.0.0",
-		"@angular/compiler": "^4.0.0",
-		"@angular/forms": "^4.0.0",
-		"@angular/http": "^4.0.0",
-		"@angular/platform-browser": "^4.0.0",
-		"@angular/platform-browser-dynamic": "^4.0.0",
-		"@angular/router": "^4.0.0",
-		"@angular/compiler-cli": "^4.0.0",
-		"@angular/cli": "^1.0.6",
+		"@angular/core": "^5.0.0",
+		"@angular/common": "^5.0.0",
+		"@angular/compiler": "^5.0.0",
+		"@angular/forms": "^5.0.0",
+		"@angular/http": "^5.0.0",
+		"@angular/platform-browser": "^5.0.0",
+		"@angular/platform-browser-dynamic": "^5.0.0",
+		"@angular/router": "^5.0.0",
+		"@angular/compiler-cli": "^5.0.0",
+		"@angular/animations": "^5.0.0",
+		"@angular/cli": "^1.5.0",
+		"rxjs": "^5.5.0",
+		"zone.js": "^0.8.14",
+		"codelyzer": "^4.0.1",
+		"stylelint": "^8.2.0",
+		"stylelint-scss": "^2.1.0",
+		"ts-node": "^3.2.0",
+		"tslint": "^5.7.0",
+		"typescript": "2.4.2",
 		"@types/node": "^6.0.60",
 		"classlist.js": "^1.1.20150312",
 		"intl": "^1.2.5",
 		"web-animations-js": "^2.3.1",
 		"core-js": "^2.4.1",
-		"rxjs": "^5.1.0",
-		"zone.js": "^0.8.4",
-		"tslint": "^5.0.0",
-		"tslint-eslint-rules": "^4.0.0",
-		"stylelint": "^7.12.0",
-		"stylelint-scss": "^1.4.4",
-		"codelyzer": "~3.0.1",
-		"typescript": "~2.2.0"
+		"tslint-eslint-rules": "^4.0.0"
 	}
 }
