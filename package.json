@@ -1,6 +1,6 @@
 {
 	"name": "e-ngx-chart",
-	"version": "5.0.0",
+	"version": "5.1.0",
 	"description": "基于Angular的图表组件，依赖第三方插件：highcharts",
 	"keywords": [
 		"angular2",
@@ -25,7 +25,7 @@
 	},
 	"scripts": {
 		"release": "ngc && npm publish",
-		"start": "ng serve -port 4201 -o",
+		"start": "ng serve -o",
 		"build-test": "ng build --prod --env=test --aot",
 		"build-prod": "ng build --prod --env=prod --aot"
 	},

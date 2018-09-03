@@ -80,6 +80,8 @@
 
 ### Inputs
 
+- `type`（`string?='chart'`） - 图表类型。`chart` 表示 HighCharts，`stockChart` 表示 HighStock
+
 - `chartOptions`（`ENgxChartOptions`） - new ENgxChartOptions(options)时，options与[Highcharts的配置属性](https://api.hcharts.cn/highcharts)一致
 
 ### Outputs

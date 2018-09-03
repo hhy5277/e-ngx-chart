@@ -4,8 +4,8 @@
  */
 
 import { Directive, ElementRef, Input, OnInit, OnDestroy, Output, EventEmitter, DoCheck } from '@angular/core';
-import { setOptions, chart } from 'highcharts';
 import { ENgxChartOptions } from './ENgxChartOptions';
+import * as Highcharts from 'highcharts/highstock';
 
 @Directive({
 	selector: '[eNgxChart]',
@@ -21,7 +21,7 @@ export class ENgxChartDirective implements OnInit, OnDestroy, DoCheck {
 	set chartOptions(data: any) {
 		this.eNgxChartOptions = data;
 	}
-
+	@Input() type: string = 'chart';
 	@Input() theme: Object;
 	@Output() ready: EventEmitter<any> = new EventEmitter<any>(false);
 	@Output() destroy: EventEmitter<any> = new EventEmitter<any>(false);
@@ -39,7 +39,7 @@ export class ENgxChartDirective implements OnInit, OnDestroy, DoCheck {
 	}
 
 	ngDoCheck() {
-		if (this.eNgxChartOptions.getSeries() !== this.oldSeries) {
+		if (this.oldSeries && this.eNgxChartOptions.getSeries() !== this.oldSeries) {
 			this.oldSeries = this.eNgxChartOptions.getSeries();
 			this.chartDestroy();
 			this.chartInit();
@@ -47,8 +47,12 @@ export class ENgxChartDirective implements OnInit, OnDestroy, DoCheck {
 	}
 
 	private chartInit() {
-		setOptions(this.theme);
-		this.eNgxChartOptions.chart = chart(this.el, this.eNgxChartOptions.options);
+		Highcharts.setOptions(this.theme);
+		if (this.type === 'chart') {
+			this.eNgxChartOptions.chart = Highcharts.chart(this.el, this.eNgxChartOptions.options);
+		} else if (this.type === 'stockChart') {
+			this.eNgxChartOptions.chart = Highcharts['stockChart'](this.el, this.eNgxChartOptions.options);
+		}
 		this.ready.emit(this);
 	}
 
